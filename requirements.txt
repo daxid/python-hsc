@@ -1,0 +1,8 @@
+re
+openpyxl
+SPARQLWrapper
+osgeo
+json
+codecs
+os
+sys
