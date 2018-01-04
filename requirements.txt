@@ -1,3 +1,2 @@
 openpyxl
 SPARQLWrapper
-gdal==2.2.3
