@@ -1,11 +1,12 @@
-FROM python:3-jessie
+FROM geographica/gdal2
 
 WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 
 RUN apt-get update
-RUN apt-get install --fix-missing -y --force-yes python-gdal
-RUN pip install --no-cache-dir -r requirements.txt
+RUN apt-get install --fix-missing -y --force-yes python3-pip
 
-CMD ["python"]
+RUN pip3 install --no-cache-dir -r requirements.txt
+RUN python3 --version
+#CMD ["python3"]
